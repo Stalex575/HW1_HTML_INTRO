@@ -53,6 +53,14 @@ h2 {
     margin: 0;
     line-height: 1.2;
     font-weight: 200;
+    padding: 50px 0;
+}
+
+h4 {
+    font-family: "FixelDisplaySemiBold", sans-serif;
+    font-size: 24px;
+    margin: 0;
+    color: #45694E;
 }
 
 /* ----------------------- hero ---------------------- */
@@ -125,7 +133,6 @@ h2 {
 
 #about h2 {
     text-align: center;
-    padding: 50px 0;
     color: #fff;
 }
 
@@ -157,3 +164,223 @@ h2 {
     margin: 10px 0 0 0;
     font-weight: 200;
 }
+
+.leaf-img {
+    position: absolute;
+    right: 0;
+    width: 150px;
+    height: auto;
+}
+
+/* --------------------- guide ------------------ */
+
+#guide {
+    background-color: #F7F5F2;
+}
+
+.guide-content-container {
+    display: flex;
+    width: 100%;
+    gap: 60px;
+}
+
+.guide-content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.guide-content h3 {
+    font-family: "FixelDisplaySemiBold", sans-serif;
+    font-size: 28px;
+    margin: 0 0 20px 0;
+    font-weight: 200;
+    color: #45694E;
+}
+
+.guide-img-container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guide-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.guide-card {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 5px 15px;
+}
+
+.guide-number {
+    margin: 0;
+    background-color: #45694E;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    font-family: "FixelDisplayBold", sans-serif;
+    font-weight: 600;
+}
+
+/* --------------- product features ----------------- */
+
+#product-features {
+    background-color: #EBE3DE;
+    height: 85vh;
+}
+
+#product-features h2 {
+    text-align: center;
+}
+
+.features-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 150px;
+}
+
+.features-card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.features-card-top {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* ----------------- app-features ------------ */
+
+#app-features {
+    background-color: #F7F5F2;
+}
+
+#app-features h2 {
+    padding: 50px 0;
+}
+
+.app-content-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.app-content {
+    width: 50%;
+}
+
+.app-content-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: app-counter;
+    padding-left: 100px;
+}
+
+.app-content-item {
+    counter-increment: app-counter;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.app-content-item p {
+    margin: 10px 0;
+}
+
+.app-content-item::before {
+    content: counter(app-counter);
+    background-color: #45694E;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: "FixelDisplayBold", sans-serif;
+    font-weight: 600;
+}
+
+.app-content-item > div {
+    flex: 1;
+}
+
+.app-img-container img{
+    width: 95%;
+    height: auto;
+}
+
+/* ------------------- reviews -------------------- */
+
+#reviews {
+    background-color: #F7F5F2;
+}
+
+#reviews h2 {
+    text-align: center;
+}
+
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 50px;
+}
+
+.review-card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.review-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-card h4 {
+    margin: 0;
+}
+
+.review-card p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+
