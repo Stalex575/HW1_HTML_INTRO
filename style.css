@@ -199,7 +199,7 @@ h4 {
     color: #45694E;
 }
 
-.guide-img-container {
+.guide-vid-container {
     width: 60%;
     display: flex;
     justify-content: center;
@@ -329,8 +329,15 @@ h4 {
     flex: 1;
 }
 
-.app-img-container img{
-    width: 95%;
+.app-vid-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-vid-container video{
+    width: 90%;
     height: auto;
 }
 
